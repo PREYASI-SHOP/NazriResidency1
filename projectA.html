@@ -1,0 +1,727 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172445699-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172445699-1');
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nazri Residency</title>
+
+    <style>
+        
+        html {
+    zoom: 85%;
+    -moz-transform: scale(1.7);
+    
+}  
+      
+    nav{
+        min-height: 105px;   
+    }
+
+    .products img:hover {
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+
+  #back{
+    background-image:url(img/background.jpg);
+    min-height: 300px;
+  }
+    #nav {
+    position:relative;
+    min-height: 105px;
+    padding: 0px 40px 25px 10px;
+    margin:0px 0px 0px 0px;
+}
+ 
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+   
+}
+ 
+ul#navigation li {
+    display:inline;
+    font-size: 15px;
+    font-weight:bold;
+    color: #283593;
+   
+    position:relative;
+    
+}
+ 
+ul#navigation li a {
+    
+   
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:outside;
+    color: #6d4c41;
+    padding: 15px 40px 25px 10px;
+ 
+    -webkit-transition:color 0.2s linear, background 0.2s linear;
+    -moz-transition:color 0.2s linear, background 0.2s linear;
+    -o-transition:color 0.2s linear, background 0.2s linear;
+    transition:color 0.2s linear, background 0.2s linear;
+}
+ 
+ul#navigation li a:hover {
+    background:#a3a1a1;
+    color:#282828;
+}
+ 
+
+ 
+ul#navigation li:hover > a {
+    background:#fff;
+    
+}
+
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+}
+ 
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin-left: 8px;
+    padding: 0;
+    
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:113%;
+    background:#f8f8f8;
+    
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;
+}
+ 
+ul#navigation ul {
+    top: 105px;
+    left: -46px;
+    
+}
+ 
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+    
+}
+ 
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    
+    
+}
+ 
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color: #6d4c41;
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    
+    float:left;
+    clear:both;
+    width:100%;
+    
+}
+
+    
+
+
+    #bigsection{
+        min-height:660px;
+    }
+    #smallsection{
+        max-height: 280px;
+    }
+
+  
+    .slider .slides{
+        max-height: 230px;
+    }
+    
+
+    img {
+  width: 100%;
+  height: auto;
+}
+   
+
+* {box-sizing: border-box;}
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #ffffff;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 100px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    
+    text-align: center;
+    padding: 20px ;
+   
+    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.actives, .dot:hover {
+  background-color: #000000;
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+.container1{
+  padding: 0 0;
+  float: left;
+  width: 50%;
+  
+}
+@media screen and (max-width: 640px){
+  .container1{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container1{
+    width: 50%;
+  }
+}
+
+.container1 .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+
+.centers {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container2 {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body class="scroll-area" data-spy="scroll" data-offset="0">
+
+  <!-- navbar -->
+  
+  <nav id="nav" class=" nav-wrapper transparent hide-on-small-only" style="width: 100%;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html" class="brand-logo font responsive-img hide-on-small-only"><img style="width: 200px;" src="img/logo2.jpg" ></a>
+        
+        
+        <ul id="navigation" class="right hide-on-med-and-down" style="padding-right: 0px;">
+            <li><i class="material-icons brown-text text-darken-1" style="font-size: 28px;padding-top: 17px;">home</i></li>
+            
+              <li class="brown-text " style="font-family: bahnschrift;"><a href="index.html">Home</a>
+                
+            </li>
+             
+            <li><i class="material-icons brown-text text-darken-1" style="font-size: 27px;padding-top: 20px;">info</i></li>
+              
+            <li>
+              <a href="#about" style="font-family: bahnschrift;" >About Us</a>
+            </li>
+              <li><i class="fas fa-book-open" style="font-size: 20px;padding-top: 37px;color:#6d4c41 ;"></i></li>
+              
+    
+              <li>
+                <a href="#products" style="font-family: bahnschrift;">Projects</a>
+                <ul>
+                    <li style="font-family: bahnschrift;"><a href="veneer.html">A Block</a></li>
+                    <li style="font-family: bahnschrift;"><a href="mica.html">C Block</a></li>
+                    
+                    
+                </ul>
+              </li>
+
+              
+              <li><i class="material-icons brown-text text-darken-1" style="font-size: 27px;padding-top: 20px;">check_box</i></li>
+              
+              <li>
+                <a href="#amenities" style="font-family: bahnschrift;" >Amenities</a>
+              </li>
+
+              <li><i class="material-icons brown-text text-darken-1 " style="font-size: 28px;padding-top: 20px;">photo_camera</i></li>
+              <li>
+              <a href="#contact" style="font-family: bahnschrift;">Gallery</a>
+              </li>
+              <li><i class="material-icons brown-text text-darken-1 " style="font-size: 28px;padding-top: 20px;">local_phone</i></li>
+              <li>
+              <a href="#contact" style="font-family: bahnschrift;">Contact Us</a>
+              </li>
+
+              
+
+            
+              
+
+              <BR> <BR> <BR> <BR> <BR>
+              
+        </ul>  
+        
+    
+</nav>
+
+    <nav class=" transparent hide-on-med-and-up">
+      <div class="container">
+          
+          <a href="index.html" class="brand-logo font responsive-img hide-on-med-and-up "><img style="width: 200px;" src="img/logo2.jpg" ></a>
+          
+          
+          <a href="" class="sidenav-trigger"data-target="mobile-menu" >
+              <i class="material-icons brown-text text-darken-1" style="font-size:32px;">menu</i>
+          </a>
+
+          
+    <ul class="sidenav grey lighten-2" id="mobile-menu">
+            
+              
+        <li><a href="index.html" style="font-size: 18px;font-family: bahnschrift;">Home</a></li>
+        <li><a href="about.html" style="font-size: 18px;font-family: bahnschrift;">About Us</a></li>
+        <li><a href="" style="font-size: 18px;font-family: bahnschrift;">Projects</a></li>
+              
+        <li><a href="veneer.html" style="padding-left: 100px;padding-top:0;margin-top:0;padding-bottom:0;margin-bottom:0;color: black;font-size: 16px;font-family: bahnschrift;"> &#8640; Block A</a></li>
+        <li><a href="mica.html" style="padding-left: 100px;padding-top:0;margin-top:0;padding-bottom:0;margin-bottom:0;color: black;font-size: 16px;font-family: bahnschrift;"> &#8640; Block C</a></li>
+          
+        
+        <li><a href="clients.html" style="font-size: 18px;font-family: bahnschrift;">Amenities</a></li>
+        <li><a href="socialmedia.html" style="font-size: 18px;font-family: bahnschrift;">Gallery</a></li>
+        <li><a href="contact.html" style="font-size: 18px;font-family: bahnschrift;">Contact Us</a></li>
+       
+        
+    </ul>
+    
+  </div>
+</nav>
+
+<nav class="brown darken-1 hide-on-small-only" style="min-height:0px; padding-left:130px ;">
+    <div class="nav-wrapper" >
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="projectA.html" class="breadcrumb">A Block</a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="brown darken-1 hide-on-med-and-up" style="min-height:0px; padding-left:30px ;">
+    <div class="nav-wrapper" >
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="projectA.html" class="breadcrumb">A Block</a>
+      
+      </div>
+    </div>
+  </nav>
+    
+  <img src="img/contact1.jpg"  class="hide-on-med-and-down" style="margin-top: -150.5px;height: 300px;" > 
+
+  <img src="img/contact.jpg"  class="hide-on-med-and-up"  height="230px"width="100%" >
+
+
+<BR><BR class="hide-on-small-only">
+    <div class="container hide-on-small-only center "  style="width: 1200px;">
+        <BR>
+        <h1 class="brown-text center text-darken-1" style="font-family:Bahnschrift;" >A Block</h1>
+        <BR><BR><BR><BR>
+         
+       
+       
+       
+       
+                        <div class="row">
+                            <div class="col s12 l4">
+                                <img src="img/ABLOCK.jpg" alt="" class="responsive-img materialboxed" >
+                            </div>
+                            <div class="col s12 l6 offset-l2">
+                                <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 25px;text-align: justify;">	
+                                    &#9679;  Total number of Apartments : 10</p>
+                                  
+                                  
+                                      <bR><bR>
+                                        <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 25px;text-align: justify;">&#9679;	Type of rooms available : - Studio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 1 BHK<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2 BHK
+                                  
+                                         </p>
+                                      <bR><BR>
+                                        <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 25px;text-align: justify;">&#9679;	Wifi : Free</p>
+                                          <BR> <BR> 
+                                            <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 25px;text-align: justify;">&#9679; Parking :  Car Park - ₹1000/month<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bike Park - Free</p>
+                                            <BR><BR>
+                                                <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 25px;text-align: justify;">&#9679;	Rental : Long term basis</p>
+                                                  <BR> 
+                                                
+                            </div>
+                        </div>
+       
+       
+                    </div>
+                        <BR id="amenities">
+                            <Div class="container hide-on-small-only">
+                            <BR> 
+                              <h1 class="brown-text center text-darken-1" style="font-family:Bahnschrift;" >Amenities</h1>
+                              <BR> <BR> 
+                              <img src="img/Amenities.jpg" class="centers" style="height:60%;width:80%">
+                              
+                              
+                                  <bR><bR><bR><bR><bR>
+                                  
+                                      <BR> 
+                            
+                            </Div>
+       
+       
+       <div class= "container center hide-on-med-and-up">
+
+
+        <h3 class="brown-text center text-darken-1" style="font-family:Bahnschrift;" >A Block</h3>
+<BR>
+        <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;">	
+            &#9679;  Total number of Apartments : 10</p>
+          
+          
+              <bR><bR>
+                <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;">&#9679;	Type of rooms available : - Studio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 1 BHK<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2 BHK
+          
+                 </p>
+              <bR><BR>
+                <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;">&#9679;	Wifi : Free</p>
+                  <BR> <BR> 
+                    <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;">&#9679; Parking :  Car Park - ₹1000/month<BR> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bike Park - Free</p>
+                    <BR><BR>
+                        <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;">&#9679;	Rental : Long term basis</p>
+                          <BR> 
+                            <BR> 
+                                
+       </div>
+<div class="hide-on-med-and-up">
+       <img src="img/Amenities.jpg" class="centers" style="width:100%">
+       <BR><BR><BR>
+    </div>
+    
+
+      <!-- footer -->
+  <footer class="page-footer brown darken-4 ">
+      <div class="container">
+          <div class="row">
+            <div class="col s12 l6 scrollspy" id="contact">
+                <h5>Contact Us</h5>
+                <br>
+                <p>Address : Nazri Residency, Visitacao Lobo Road, Lobo Vaddo Parra, Mapusa, Bardez, North Goa - 403510.</p>
+                <br>
+                
+                <p>Nazri Lobo : +91 8379078277, 9820313757. Email : nazriresidency.parra@gmail.com</p>
+                <br>
+                <p>Jinel Lobo : +91 9920827223.             Email : jinel.nazriresidency@yahoo.com</p>
+            </div>
+            <div class="col s12 l4 offset-l2 scrollspy" id="">
+                <h5>Connect</h5>
+                <BR>
+                <ul>
+                    
+                    <li>
+                    <i class="tiny material-icons prefix">email</i>
+                     <a href=mailto:nazriresidency.parra@gmail.com?subject class ="HTML link grey-text text-lighten-3">&nbsp;&nbsp;Email</a>
+                     </li>
+                   <BR>
+                    <li>
+                      <i class="fa fa-whatsapp"></i>
+                      <a href="https://wa.me/919920827223" class="grey-text text-lighten-3">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                       </li>
+                     
+                     
+                </ul>
+            </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align hide-on-small-only">&copy; 2021 Nazri Residency    |    All rights reserved</div>
+          <div class="container center-align hide-on-med-and-up">&copy; 2021 Nazri Residency </div>
+      </div>
+
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ 
+
+
+  
+
+
+  <script>
+    $(document).ready(function(){
+      $('#mobile-menu').sidenav({ edge: 'left'});
+        $('#mobile-menu-right').sidenav({ edge: 'right'});
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+        disableWeekends : true
+            
+    });
+    $('.slider').slider({
+    indicators: false,
+    height: 500,
+    transition:500,
+    interval: 4000
+});
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $(".tabs-content").css('width','1000px');
+    });
+    
+
+  </script>
+</body>
+</html>
