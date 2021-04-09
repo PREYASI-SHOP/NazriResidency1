@@ -552,12 +552,12 @@ ul#navigation ul li a {
   <ul class="slides" id="bigsection" >
     
       <li id="bigsection">
-          <img src="img/1.jpg" >
+          <img src="img/1.jfif" >
           
       </li>
 
       <li id="bigsection">
-        <img src="img/27.jpg" >
+        <img src="img/2.jpg" >
         
     </li>
       
@@ -573,15 +573,9 @@ ul#navigation ul li a {
         <img src="img/5.jpg" >
           
     </li>
-  </li>
-  <li id="bigsection">
-    <img src="img/1.jpg" >
-      
-</li>
-<li id="bigsection">
-  <img src="img/2.jpg" >
-    
-</li>
+
+
+
 
 </ul>
 </div>
@@ -589,10 +583,10 @@ ul#navigation ul li a {
 <div class="slider hide-on-med-and-up" id="smallsection">
     <ul class="slides">
         <li id="smallsection">
-            <img src="img/26.jpg" >
+            <img src="img/1.jfif" >
         </li>
         <li id="smallsection">
-            <img src="img/27.jpg" >
+            <img src="img/2.jpg" >
         </li>
         <li id="smallsection">
             <img src="img/3.jpg" >
@@ -604,12 +598,7 @@ ul#navigation ul li a {
             <img src="img/5.jpg" >
         </li>
         
-        <li id="smallsection">
-          <img src="img/1.jpg" >
-      </li>
-      <li id="smallsection">
-        <img src="img/2.jpg" >
-    </li>
+      
 </ul>
 
 </div>
@@ -652,15 +641,94 @@ ul#navigation ul li a {
                 <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;font-weight: bold;">	For further information,<a href="#contact"> Contact us.</a> </p>
                   <BR> 
                     <p class="brown-text center text-darken-1 " style="font-family:Bahnschrift;font-size: 18px;text-align: justify;font-weight: bold;">	If you want us to reach you, <a href="forms.html">Click here</a> </p>
-                    <BR>
+                    <BR><BR><BR>
         </div>
 
 
  
+        <div class="slideshow-container hide-on-small-only">
+          <br>
+          <h1 class="brown-text center text-darken-1" style="font-family:Bahnschrift;" >Testimonials</h1>
+          <br> <br>
+          <div class="mySlides">
+            <img src="img/test2.jpg" style="width:50%;">
+          </div>
+          
+          <div class="mySlides">
+              <img src="img/test2.jpg" style="width:50%;">
+          </div>
+          
+          <div class="mySlides">
+              <img src="img/test2.jpg" style="width:50%;">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <BR class="hide-on-med-and-down"> <BR class="hide-on-med-and-down"> 
+          
+          <div class="dot-container hide-on-med-and-down">
+              
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+          
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" actives", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " actives";
+          }
+          </script>
+      
+      <h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >Testimonials</h3>
+        <div class="slider hide-on-med-and-up" id="smallsection">
+          
+          
+            <ul class="slides" >
+                <li id="smallsection">
+                  <img src="img/test2.jpg"  >
+                </li>
+                <li id="smallsection">
+                    <img src="img/test2.jpg" >
+                </li>
+                <li id="smallsection">
+                    <img src="img/test2.jpg" >
+                </li>
+             
+                
+              
+        </ul>
 
-
+      </div>
 
   <div class="container hide-on-small-only center "  style="width: 1200px;">
+    <BR><BR><BR><BR>
     <h1 class="brown-text center text-darken-1" style="font-family:Bahnschrift;" >Find Us</h1>
     <BR><BR>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3627.5876301940407!2d73.79050805700713!3d15.575870954674011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a525d9828844944!2sNazri%20Residency!5e0!3m2!1sen!2sin!4v1616144072353!5m2!1sen!2sin" width="1200" height="650" style="border-color: #000000;" allowfullscreen="" loading="lazy"></iframe>
