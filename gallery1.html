@@ -193,27 +193,16 @@ ul#navigation ul li a {
 }
    
 
-* {box-sizing: border-box;}
-
-
-
-
-
-
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
+  max-width: 1000px;
   position: relative;
-  background: #ffffff;
+  margin: auto;
 }
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 20px 0px 0px 0px;
-  text-align: center;
-}
-
 
 /* Next & previous buttons */
 .prev, .next {
@@ -221,68 +210,58 @@ ul#navigation ul li a {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -30px;
-  padding: 100px;
-  color: #000000;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
   font-weight: bold;
-  font-size: 70px;
-  border-radius: 3px 3px 3px 3px;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size:100px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left:910px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size:100px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.2);
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
 }
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    
-    text-align: center;
-    padding: 20px ;
-   
-    
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.2s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.actives, .dot:hover {
-  background-color: #000000;
-}
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-*, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-}
-
 
 
 
@@ -583,157 +562,247 @@ ul#navigation ul li a {
     </div>
   </nav>
 
-  <h1 class="brown-text center text-darken-1 hide-on-small-only" style="font-family:Bahnschrift;" >C Block</h1>
+  
   <h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >C Block</h3>
-  <div class="slider hide-on-small-only"  >
-    <ul class="slides" id="bigsection" >
-      
-        <li id="bigsection">
-            <img src="img/16.1.jpg" >
-            
-        </li>
-  
-        <li id="bigsection">
-          <img src="img/16.2.jpg" >
-          
-      </li>
-        
-   
-  </ul>
+ 
+<div class="slideshow-container hide-on-med-and-up">
+  <div class="mySlides1">
+    <img src="img/16.1.jpg" style="width:100%;height:280px;" >
   </div>
 
-
-
-  <div class="slider hide-on-med-and-up" id="smallsection">
-    <ul class="slides">
-        <li id="smallsection">
-            <img src="img/16.1.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/16.2.jpg" >
-        </li>
-      
-      
-</ul>
-
-</div>
-  
-<BR class="hide-on-small-only" ><BR  class="hide-on-small-only"><BR  class="hide-on-small-only" ><BR  class="hide-on-small-only"><BR   class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR ><BR>
-
-    <h1 class="brown-text center text-darken-1 hide-on-small-only" style="font-family:Bahnschrift;" >C Block 2 BHK</h1>
-  <h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >C Block 2 BHK</h3>
-  <div class="slider hide-on-small-only"  >
-    <ul class="slides" id="bigsection" >
-      
-        <li id="bigsection">
-            <img src="img/b1.jpg" >
-            
-        </li>
-  
-        <li id="bigsection">
-          <img src="img/b2.jpg" >
-          
-      </li>
-      <li id="bigsection">
-        <img src="img/b3.jpg" >
-        
-    </li><li id="bigsection">
-        <img src="img/b4.jpg" >
-        
-    </li><li id="bigsection">
-        <img src="img/b5.jpg" >
-        
-    </li>
-      
-  </ul>
+  <div class="mySlides1">
+    <img src="img/16.2.jpg" style="width:100%;height:280px;">
   </div>
 
+  
 
-
-  <div class="slider hide-on-med-and-up" id="smallsection">
-    <ul class="slides">
-        <li id="smallsection">
-            <img src="img/b1.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/b2.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/b3.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/b4.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/b5.jpg" >
-        </li>
-       
-      
-      
-</ul>
-
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
+
+<BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+<h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >C Block 2 BHK</h3>
+<div class="slideshow-container hide-on-med-and-up">
+  <div class="mySlides2">
+    <img src="img/c1.jpg" style="width:100%;height:280px;" >
+  </div>
+
+  <div class="mySlides2">
+    <img src="img/c2.jpg" style="width:100%;height:280px;">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="img/c3.jpg" style="width:100%;height:280px;">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="img/c4.jpg" style="width:100%;height:280px;">
+  </div>
+ 
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<BR class="hide-on-med-and-up"><BR class="hide-on-med-and-up">
+
+
+
+
+    <h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >C Block 1 BHK</h3>
+ 
+    <div class="slideshow-container hide-on-med-and-up">
+      <div class="mySlides3">
+        <img src="img/o1.jpg" style="width:100%;height:280px;" >
+      </div>
     
+      <div class="mySlides3">
+        <img src="img/o2.jpg" style="width:100%;height:280px;">
+      </div>
+    
+      <div class="mySlides3">
+        <img src="img/o3.jpg" style="width:100%;height:280px;">
+      </div>
+    
+    
+      <a class="prev" onclick="plusSlides1(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides1(1, 0)">&#10095;</a>
+    </div>
+    
+    
+     
+
+    
+    
+    
+    <script>
+    var slideIndex1 = [1,1];
+    var slideId1 = ["mySlides3"]
+    showSlides1(1, 0);
+    
+    function plusSlides1(n, no) {
+      showSlides1(slideIndex1[no] += n, no);
+    }
+    
+    function showSlides1(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId1[no]);
+      if (n > x.length) {slideIndex1[no] = 1}    
+      if (n < 1) {slideIndex1[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex1[no]-1].style.display = "block";  
+    }
+    </script>
 
 
-<BR class="hide-on-small-only" ><BR  class="hide-on-small-only"><BR  class="hide-on-small-only" ><BR  class="hide-on-small-only"><BR   class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR ><BR>
+
+<h1 class="brown-text center text-darken-1 hide-on-small-only" style="font-family:Bahnschrift;" >C Block</h1>
+ 
+<div class="slideshow-container hide-on-small-only">
+  <div class="mySlides5">
+    <img src="img/16.1.jpg" style="width:100%;height:660px;" >
+  </div>
+
+  <div class="mySlides5">
+    <img src="img/16.2.jpg" style="width:100%;height:660px;">
+  </div>
+
+
+  <a class="prev1" onclick="plusSlides2(-1, 0)">&#10094;</a>
+  <a class="next1" onclick="plusSlides2(1, 0)">&#10095;</a>
+</div>
+
+<BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only">
+<h1 class="brown-text center text-darken-1 hide-on-small-only" style="font-family:Bahnschrift;" >C Block 2 BHK</h1>
+<div class="slideshow-container hide-on-small-only">
+  <div class="mySlides6">
+    <img src="img/c1.jpg" style="width:100%;height:660px;" >
+  </div>
+
+  <div class="mySlides6">
+    <img src="img/c2.jpg" style="width:100%;height:660px;">
+  </div>
+ 
+  <div class="mySlides6">
+    <img src="img/c3.jpg" style="width:100%;height:660px;">
+  </div>
+ 
+  <div class="mySlides6">
+    <img src="img/c4.jpg" style="width:100%;height:660px;">
+  </div>
+ 
+
+
+  <a class="prev1" onclick="plusSlides2(-1, 1)">&#10094;</a>
+  <a class="next1" onclick="plusSlides2(1, 1)">&#10095;</a>
+</div>
+
+
+
+<script>
+var slideIndex2 = [1,1];
+var slideId2 = ["mySlides5", "mySlides6"]
+showSlides2(1, 0);
+showSlides2(1, 1);
+
+function plusSlides2(n, no) {
+  showSlides2(slideIndex2[no] += n, no);
+}
+
+function showSlides2(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId2[no]);
+  if (n > x.length) {slideIndex2[no] = 1}    
+  if (n < 1) {slideIndex2[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex2[no]-1].style.display = "block";  
+}
+</script>
+<BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only">
+
+
+
 
     <h1 class="brown-text center text-darken-1 hide-on-small-only" style="font-family:Bahnschrift;" >C Block 1 BHK</h1>
-  <h3 class="brown-text center text-darken-1 hide-on-med-and-up" style="font-family:Bahnschrift;" >C Block 1 BHK</h3>
-  <div class="slider hide-on-small-only"  >
-    <ul class="slides" id="bigsection">
+ 
+    <div class="slideshow-container hide-on-small-only">
+      <div class="mySlides7">
+        <img src="img/o1.jpg" style="width:100%;height:660px;" >
+      </div>
+    
+      <div class="mySlides7">
+        <img src="img/o2.jpg" style="width:100%;height:660px;">
+      </div>
+    
+      <div class="mySlides7">
+        <img src="img/o3.jpg" style="width:100%;height:660px;">
+      </div>
       
-        <li id="bigsection">
-            <img src="img/c1.jpg" >
-            
-        </li>
-  
-        <li id="bigsection">
-          <img src="img/c2.jpg" >
-          
-      </li>
-      <li id="bigsection">
-        <img src="img/c3.jpg" >
-        
-    </li>
-
-    <li id="bigsection">
-        <img src="img/c4.jpg" >
-        
-    </li>
-      
-  </ul>
-  </div>
-
-
-
-  <div class="slider hide-on-med-and-up" id="smallsection">
-    <ul class="slides">
-        <li id="smallsection">
-            <img src="img/c1.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/c2.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/c3.jpg" >
-        </li>
-        <li id="smallsection">
-            <img src="img/c4.jpg" >
-        </li>
-      
-      
-</ul>
-
-</div>
-
-
-
-
-
-<BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR   class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR  class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only">
-
+      <a class="prev1" onclick="plusSlides3(-1, 0)">&#10094;</a>
+      <a class="next1" onclick="plusSlides3(1, 0)">&#10095;</a>
+    </div>
+    
+    
+    
+    
+    <script>
+    var slideIndex3 = [1,1];
+    var slideId3 = ["mySlides7"]
+    showSlides3(1, 0);
    
+    
+    function plusSlides3(n, no) {
+      showSlides3(slideIndex3[no] += n, no);
+    }
+    
+    function showSlides3(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId3[no]);
+      if (n > x.length) {slideIndex3[no] = 1}    
+      if (n < 1) {slideIndex3[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex3[no]-1].style.display = "block";  
+    }
+    </script>
+
+
+
+
+
+
+<BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only"><BR class="hide-on-small-only">
+
+
+
+
 
 
       <!-- footer -->
